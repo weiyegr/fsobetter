@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import url("basic.css");
+body {
+	line-height: 24px;
+	font: 12px;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li {
+	list-style: none;
+}
+#overwarp {
+	padding: 10px;
+}
+.overform li {
+	margin-bottom: 10px;
+}
+.overformtitle {
+	float: left;
+	width: 60px;
+	text-align: right;
+}
+.overformdiv {
+	margin-left: 10px;
+	float: left;
+	margin-right: 10px;
+}
+.overformdiv .txt {
+	width: 150px;
+	height: 24px;
+	line-height: 24px;
+	padding:0 6px;
+}
+.overformdiv .radiotxt {
+	margin-right: 10px;
+}
+.overform li span {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+}
+.overform li .must {
+	color: red;
+}
+.overform li .ccc {
+	color: #ccc;
+}
+.submittxt {
+	width: 80px;
+	height: 28px;
+}
+.colorddd {
+	color: #666;
+}
+
+.Table {
+    border: 1px solid #AACDED;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+.align_Center {
+    text-align: center;
+}
+.align_Left {
+    text-align: left;
+}
+tr.Thead, td.Tfoot {
+    background: none repeat scroll 0 0 #EBF4FB;
+}
+.cart_table .Table .align_Left {
+    vertical-align: middle;
+}
+.cart_table td {
+    padding: 2px;
+}
+.Table th, .Table td {
+    border: 1px solid #AACDED;
+    padding-left: 5px;
+}
+.cart_table .Table .p-img {
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.cart_table .Table .p-img img {
+    border: 1px solid #DDDDDD;
+    height: 50px;
+    vertical-align: middle;
+    width: 50px;
+}
+.cart_op {
+    font-size: 14px;
+    height: 38px;
+    padding: 25px 10px;
+}
+.price {
+    color: #FF0000;
+    font-family: verdana;
+    font-weight: bold;
+}
+.cart_op .li4 {
+    background: url("../images/gwc_05.jpg") no-repeat scroll 0 9px transparent;
+    margin-right: 20px;
+    padding-left: 22px;
+}
+.cart_op li {
+    float: left;
+    line-height: 38px;
+}
+.cart_op li a {
+    font-size: 12px;
+}
+.cart_op .li2 {
+    background: url("../images/gwc_07.jpg") no-repeat scroll 0 9px transparent;
+    margin-right: 20px;
+    padding-left: 19px;
+}
+.cart_op .li1 {
+    background: url("../images/cd.gif") no-repeat scroll 7px 11px transparent;
+    padding-left: 23px;
+}
+.cart_op .li3 {
+    float: right;
+}
+.cart_op .li3 #continueBuyBtn {
+    margin-right: 5px;
+    width: 109px;
+}
+.cart_op .li3 a {
+    background: url("../images/btn0603.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 38px;
+    line-height: 200px;
+    overflow: hidden;
+}
+.cart_op .li3 #gotoOrderInfo {
+    background-position: -110px 0;
+    width: 99px;
+}
+.o_write {
+    background: none repeat scroll 0 0 #EFF5F8;
+    border-bottom: 1px solid #B7D2DF;
+    border-top: 2px solid #B7D2DF;
+    padding: 10px;
+}
+.o_show, .o_write {
+    border-bottom: 2px dotted #CCCCCC;
+    margin: 10px 10px 0;
+    text-align: left;
+}
+.o_show h1, .o_write h1 {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+.o_show h1 a, .o_write h1 a {
+    color: #185D94;
+    font-size: 12px;
+    font-weight: 100;
+}
+.o_show .middle, .o_write .middle {
+    color: #333333;
+    line-height: 20px;
+    padding-left: 17px;
+}
+.o_write td {
+    line-height: 20px;
+    padding: 2px;
+}
+.f12 {
+    font-size: 12px;
+}
+.fw100 {
+    font-weight: 100;
+}
+
+input.txt {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #7CADC5 #B7D2DF #B7D2DF #7CADC5;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+}
+input, img, select {
+    vertical-align: middle;
+}
+#part_cart table {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+}
+#part_cart tr.Thead td {
+    background: none repeat scroll 0 0 #FFF4D7;
+    height: 28px;
+}
+#part_cart td {
+    border-color: #CCCCCC -moz-use-text-color;
+    border-style: solid none;
+    border-width: 1px medium;
+}
+#ware_info .info1 {
+    border-bottom: 1px dotted #EBCBA0;
+}
+#ware_info {
+    background: none repeat scroll 0 0 #FFF4D7;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+#ware_info .info2 a {
+    background: url("images/point.jpg") no-repeat scroll left center transparent;
+    color: #C68600;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 25px;
+    padding-left: 10px;
+}
+#ware_info .middle {
+    font-size: 14px;
+    line-height: 150%;
+    padding: 0 40px;
+    text-align: left;
+}
+#ware_info .middle a {
+    color: #185D94;
+    font-size: 12px;
+}
+.submit {
+    padding-bottom: 10px;
+    text-align: right;
+}
+.o_show, .o_write {
+    border-bottom: 2px dotted #CCCCCC;
+    margin: 10px 10px 0;
+    text-align: left;
+}
+#ware_info .info1 {
+    border-bottom: 1px dotted #EBCBA0;
+}

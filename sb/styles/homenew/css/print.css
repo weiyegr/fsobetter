@@ -1,0 +1,48 @@
+/* Site Print Styles
+ * Updated:  Date @ Time
+ * Author: Firstname Lastname <company url>
+ * ---------------------------------------------*/
+
+	/*
+	-- TOC
+	---------------------------------------
+	1. Colors
+	2. Links
+	3. Typography
+	4. Structure
+	*/
+
+	/* -- COLORS
+	---------------------------------------*/
+	/* black	=	#000 */
+	/* grey		=   #333 */
+	
+	
+	/* -- LINKS
+	---------------------------------------*/
+	a:link, a:visited { background: transparent; color: #333; font-weight: 700; text-decoration: underline; }
+	
+	/* note: this will place the url after the link in print mode, does not work on relative links.
+	don't want it just remove or comment out the two lines below. */
+	a:link[href^="http://"]:after, a[href^="http://"]:visited:after { content: " (" attr(href) ")"; font-size: 90%; }
+	a[href^="http://"] { color: #000; }
+	
+	/* remove border around any image that has a link */
+	a img { border: none; }
+	
+	
+	/* -- TYPOGRAPHY
+	---------------------------------------*/
+	h1 { font-size: 20pt; }
+	h2 { font-size: 18pt; }
+	h3 { font-size: 16pt; }
+	h4, h5, h6 { font-size: 12pt; }
+	
+	
+	/* -- STRUCTURE
+	---------------------------------------*/
+	body { width: 100% !important; margin: 0 !important; padding: 0 !important; background: none; color: #000; font: 12pt/1.4 Garamond, "Times New Roman", serif; }
+	
+	
+	/* -- hide various parts from the site */
+	/* class name or id name here { display: none; }

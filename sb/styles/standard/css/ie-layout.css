@@ -1,0 +1,14 @@
+/* Site Layout Styles - IE Fixes and Bugs
+ * Updated:  Date @ Time
+ * Author: Firstname Lastname <company url>
+ * ---------------------------------------------*/
+ 
+ 
+ #content .category_parent { margin: 0 0 20px; height: 282px; }
+ 
+ 
+ #content .product_list2 .product_list_image { width: 360px; margin: 0; text-align: center; display: block; padding: 0; }
+ #content .product_list2 .product_list_content { display: block; }
+ 
+ .ie_flash_filter { background-color: #000; filter: alpha(opacity=0); }
+ 

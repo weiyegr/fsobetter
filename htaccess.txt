@@ -1,0 +1,10 @@
+RewriteEngine On 
+RewriteBase / 
+
+RewriteRule ^index\.htm$ index.php
+RewriteRule ^guest_book\.htm$ index.php/guest_book
+RewriteRule ^category/(.*)\.htm$ index.php/category/index/$1
+RewriteRule ^page/(.*)\.htm$ index.php/home/post/$1
+RewriteRule ^article/(.*)\.htm$ index.php/category/post/$1
+
+

@@ -1,0 +1,584 @@
+/* Site Layout Styles
+ * Updated:  Date @ Time
+ * Author: Firstname Lastname <company url>
+ * ---------------------------------------------*/
+
+	/*
+	-- TOC
+	---------------------------------------
+	1. Colors
+	2. Reset
+	3. Fix Floats
+	4. Links
+	5. Typography
+	6. Structure
+	*/
+
+	/* -- COLORS
+	---------------------------------------*/
+	/* color name	=	hex value */
+
+
+	/* -- RESET
+ 	---------------------------------------*/
+ 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: inherit; font-family: inherit; list-style: none; }
+ 	
+ 	table { border-collapse: collapse; border-spacing: 0; }
+ 	
+ 	
+ 	/* -- FIX FLOATS
+ 	---------------------------------------*/
+ 	.clearfix:after { display: block; clear: both; height: 0; content: "."; visibility: hidden; }
+ 	* html .clearfix { height: 1%; }
+ 	*+ html .clearfix { height: 1%; }
+
+
+	/* -- LINKS
+	---------------------------------------*/
+
+	
+	/* -- TYPOGRAPHY
+	---------------------------------------*/
+	.subheadclass { color: #fff; font-size: 1.2em; font-weight: bold; line-height: 1.2; }
+	.txtclass { color: #fff; line-height: 1.2; }
+
+
+	/* -- STRUCTURE
+ 	---------------------------------------*/
+	body { color: #000; font: 62.5%/1.2 Verdana, Arial, Helvetica, sans-serif; background: url(../images/Narva_bkg_large.jpg) top fixed no-repeat; }
+
+
+		/* -- container */
+		#container { width: 1050px; margin: 0 auto; }
+		
+		
+			/* header ----------------------------------*/
+			#header { height: 113px; }
+			
+			/* logo */	#header h1 { float: left; padding: 18px 0 0 60px; }
+			
+			/* search */	#header form { float: right; width: 161px; height: 17px; margin: 49px 0 0; padding: 0 75px 0 0; background: url(../images/search.gif) no-repeat; }
+							#header form input, #header form button { float: left; }
+							#header form input { width: 108px; height: 11px; margin: 0; padding: 3px; border: 0; background: none; font-size: 11px; }
+							#header form button { width: 47px; height: 17px; margin: 0; padding: 0; border: 0; background: none; cursor: pointer; text-indent: -999em; }
+			
+			/* nav */	#header ul { clear: both; width: 900px; height: 22px; margin: 0 auto; padding: 0 0 10px; }
+						#header li { position: relative; float: left; width: 164px; height: 22px; z-index: 99; }
+						#header li a { display: block; width: 164px; height: 22px; text-indent: -999em; }
+						#header li.home, #header li.home a { width: 80px; }						
+
+						#header ul ul { position: absolute; top: -999em; left: 0; width: 164px; height: auto; background: #fff; padding: 0; }
+						#header li:hover ul, #header li.hover ul { top: 22px; left: 0; }
+						#header ul li li:hover ul, #header ul li li.hover ul { left: -999em; }
+						
+						#header ul li:hover { visibility: inherit; }
+
+						
+						/* off state */
+						#header li.home a { background: url(../images/home.jpg) no-repeat; }
+						#header li a.products { background: url(../images/products-off.jpg) no-repeat; }
+						#header li a.latestrelease { background: url(../images/latest-release-off.jpg) no-repeat; }
+						#header li a.news { background: url(../images/media-off.jpg) no-repeat; }
+						#header li a.aboutus { background: url(../images/about-off.jpg) no-repeat; }
+						#header li a.contactus { background: url(../images/contact-off.jpg) no-repeat; }
+						
+						/* over state */
+						#header li a.products:hover, #header li a.products-on, #header li:hover a.products, #header li.hover a.products { background: url(../images/products-on.jpg) no-repeat; }
+						#header li a.latestrelease:hover { background: url(../images/latest-release-on.jpg) no-repeat; }
+						#header li a.news:hover, #header li a.news-on, #header li:hover a.news, #header li.hover a.news { background: url(../images/media-on.jpg) no-repeat; }
+						#header li a.aboutus:hover { background: url(../images/about-on.jpg) no-repeat; }
+						#header li a.contactus:hover { background: url(../images/contact-on.jpg) no-repeat; }
+						
+						#header li li { width: 164px; height: auto; }
+						#header li li a { width: 142px; height: auto; margin: 1px; padding: 2px 10px; background: #e7e8f4; text-indent: 0; text-align: left; text-decoration: none; color: #1655a6; font-size: 1em; }
+						
+						#header li li a:hover { color: #fff; font-style: italic; }
+						#header li li a.emergency-lighting:hover { background: #5f3283; }
+						#header li li a.driving-fog-lamps:hover { background: #944398; }
+						#header li li a.globes-2:hover { background: #0066cc; }
+						#header li li a.fuses-accessories:hover { background: #888309; }
+						#header li li a.terminals:hover, #header li li a.cables:hover { background: #009d8d; }
+						#header li li a.switches:hover { background: #e23d39; }
+						#header li li a.relays-flashers:hover { background: #e23d39; }
+						#header li li a.reversing-alarms-horns:hover { background: #e23d39; }
+						#header li li a.power-accessories:hover { background: #e23d39; }
+						#header li li a.trailer-connectors:hover { background: #f5a32e; }
+						#header li li a.conventionaltrucktrailerlighting:hover { background: #ea7021; }
+						#header li li a.rv-interior-lighting:hover { background: #b8c3b9; }
+						#header li li a.truck-trailer:hover { background: #d6481a; }
+						#header li li a.led-truck-trailer:hover, #header li li a.sealed-truck-trailer:hover, #header li li a.conventional-truck-trailer:hover { background: #a1283c; }
+						#header li li a.merchandisers:hover { background: #73619e; }
+						
+						#header ul.news_menu li a:hover { background: #1d3f96; color: #fff; font-style: italic; }
+						
+						
+						
+			/* banner ----------------------------------*/
+			#banner { width: 900px; height: 282px; margin: 0 auto; background: #1c3f93; }
+			
+			
+			/* content ----------------------------------*/
+			#content { position: relative; width: 940px; margin: 0 auto; padding: 0 0 0 40px; z-index: 1; }
+			
+			div.searchContent, div.register { width: 870px; padding: 15px; background: #fff; }
+			div.register h2 { color: #1c3f94; font-size: 13pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; line-height: 15pt; margin: 0 0 .8em; }
+			div.register p { font-size: 1.1em; margin: 0 0 .5em; }
+
+			div.register form { margin: 0 0 1em; }
+			div.register table td { font-size: 1.1em; }
+
+			div.searchContent h2 { margin: 0 0 15px; padding: 0 0 5px; border-bottom: 2px solid #1c3f94; }
+			div.searchContent legend { padding: 0 0 15px; }
+			div.searchContent div.search_form { padding: 0 0 25px; }
+			p.search_returned { padding: 0 0 15px; }
+			
+			ul.search_list li { padding: 0 0 15px; }
+			ul.search_list li a { font-size: 1.2em; }
+			
+			p.search_pages { text-align: right; }
+			p.search_pages a { color: #000; }
+			
+			
+				/* top banner graphic */
+				#content .category_parent { position: relative; margin: 0 0 20px; min-height: 282px; height: auto !important; height: 282px; }
+				
+					/* category menu */
+					#content .parent_menu { 
+						position: absolute; 
+						top: 0; 
+						left: 0; 
+						width: 180px; 
+						height: 282px; 
+						overflow-y: scroll; 
+						overflow-x: hidden;
+						background: url(../images/bg-menu.png) repeat; 
+						}
+					#content .parent_menu h3 {
+						font-size: 10px;
+						}
+					#content .parent_menu h3 a {
+						display: block;
+						width: 170px;
+						margin: 0;
+						padding: 2px 5px;
+						color: #fff;
+						font-size: 1.2em;
+						font-style: italic;
+						text-decoration: none;
+						}
+					#content .parent_menu h3 a.driving-fog-lamps {
+						background: #944398;
+						}
+					#content .parent_menu h3 a.emergency-lighting {
+					 	background: #5f3283;
+						}
+					#content .parent_menu h3 a.globes-2 {
+						background: #0066cc;
+						}
+					#content .parent_menu h3 a.fuses-accessories {
+						background: #888309;
+						}
+					#content .parent_menu h3 a.cables {
+						background: #009d8d;
+						}
+					#content .parent_menu h3 a.switches,
+					#content .parent_menu h3 a.relays-flashers,
+					#content .parent_menu h3 a.reversing-alarms-horns,
+					#content .parent_menu h3 a.power-accessories {
+						background: #e23d39;
+						}
+					#content .parent_menu h3 a.trailer-connectors {
+						background: #f5a32e;
+						}
+					#content .parent_menu h3 a.rv-interior-lighting {
+						background: #b8c3b9;
+						}
+					#content .parent_menu h3 a.terminals {
+						background: #00aa9d;
+						}
+					#content .parent_menu h3 a.led-truck-trailer,
+					#content .parent_menu h3 a.sealed-truck-trailer,
+					#content .parent_menu h3 a.conventional-truck-trailer {
+						background: #a1283c;
+						}
+					#content .parent_menu h3 a.merchandisers {
+						 background: #73619e;
+						}
+						
+					#content .parent_menu ul li a {
+						display: block;
+						width: 175px;
+						padding: 2px 0 2px 5px;
+						color: #1c3f94;
+						text-decoration: none;
+						}
+					#content .parent_menu ul li a:hover {
+						background: #fff;
+						font-style: italic;
+						font-weight: bold;
+						}
+					#content .parent_menu ul li li a {
+						width: 165px;
+						padding: 2px 0 2px 15px;
+						}
+					#content .parent_menu ul li li li a {
+						width: 145px;
+						padding: 2px 0 2px 35px;
+						}
+						
+					#content .parent_menu ul li.on a {
+						background: #fff;
+						font-style: italic;
+						font-weight: bold;
+						}
+					#content .parent_menu ul li.off a {
+						background: none;
+						font-style: normal;
+						font-weight: normal;
+						}
+
+					
+					
+				
+				/* category list */
+				#content .category_list { float: left; width: 210px; height: 128px; margin: 0 20px 20px 0; }
+				#content .category_list h3 a { display: block; width: 210px; height: 128px; margin: 0; padding: 0; text-indent: -999em; font-size: 1.1em; }
+			
+				
+				/* product list */
+				#content .product_list { float: left; width: 440px; height: 144px; margin: 0 20px 20px 0; background-color: #fff; }
+				#content .product_list .product_list_content { padding: 10px; }
+				#content .product_list .product_list_content h2 { color: #1c3f94; font-size: 1.6em; }
+				#content .product_list .product_list_content h3 { font-size: 1.2em; line-height: 1.2; }
+				#content .product_list .product_list_short { padding: 10px 0 0; }
+				#content .product_list .product_list_link { float: right; padding: 10px 10px 0; }
+				#content .product_list .product_list_link a { display: block; width: 60px; height: 16px; border: 5px solid #c4c5e1; background: url(../images/info_button.gif) 0 0 no-repeat; text-indent: -999em; }
+				#content .product_list .product_list_link a:hover { background: url(../images/info_button.gif) 0 -16px no-repeat; }
+				#content .product_list .product_list_image { float: left; padding: 2px 15px 0 5px; }
+				
+				
+					/* product list backgrounds */
+					/*#content .product_list.driving-fog-lamps { background-image: url(../images/Driving-stipple-panel.gif); background-repeat: no-repeat; }
+					#content .product_list.emergency-lighting, #content .product_list2.emergency-lighting { background-image: url(../images/Emerg-Panel-2.jpg); background-repeat: no-repeat; }
+					#content .product_list.globes-incandescent-halogen { background-image: url(../images/globes-panel.jpg); background-repeat: no-repeat; }
+					#content .product_list.fuses-fuse-accessories { background-image: url(../images/Fuses-Panel.jpg); background-repeat: no-repeat; }
+					#content .product_list.switches, #content .product_list.flashers-relays, #content .product_list.reversing-alarms-horns, #content .product_list.power-accessories { background-image: url(../images/switches-panel.jpg); background-repeat: no-repeat; }
+					#content .product_list.trailer-connectors { background-image: url(../images/trailer-panel.png); background-repeat: no-repeat; }
+					#content .product_list.rv-interior-lighting { background-image: url(../images/RV-Panel.jpg); background-repeat: no-repeat; }
+					#content .product_list.led-truck-trailer, #content .product_list.sealed-truck-trailer, #content .product_list.conventional-truck-trailer { background-image: url(../images/TT-Panel.jpg); background-repeat: no-repeat; }
+					#content .product_list.merchandisers { background-image: url(../images/Merch-Panel.jpg); background-repeat: no-repeat; }*/
+					
+					
+					#content .product_list.driving-fog-lamps { 
+						background-image: url(../images/globes-panel.jpg); 
+						background-repeat: no-repeat; 
+						}
+						
+					#content .product_list.emergency-lighting {
+						background-image: url(../images/emergency-lighting/Emerg-Summary-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.globes {
+						background-image: url(../images/globes/globes-panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.fuses-accessories { 
+						background-image: url(../images/fuses/Fuses-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+					
+					#content .product_list.terminals {
+						background-image: url(../images/terminals/Terminals-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.switches, 
+					#content .product_list.relays-flashers,
+					#content .product_list.reversing-alarms-horns,
+					#content .product_list.power-accessories {
+						background-image: url(../images/switches/switches-panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.trailer-connectors {
+						background-image: url(../images/trailer-connectors/trailer-panel.png);
+						background-repeat: no-repeat;
+						}
+					
+					#content .product_list.rv-interior-lighting {
+						background-image: url(../images/rv-interior/RV-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.led-truck-trailer,
+					#content .product_list.sealed-truck-trailer,
+					#content .product_list.conventional-truck-trailer {
+						background-image: url(../images/truck-trailer/T&T-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+						
+					#content .product_list.merchandisers {
+						background-image: url(../images/merchandisers/Merch-Panel.jpg);
+						background-repeat: no-repeat;
+						}
+					
+					
+				
+				/* product list 2 layout */
+				#content .product_list2 { position: relative; float: left; width: 440px; height: 144px; margin: 0 20px 20px 0; background-color: #fff; }
+				#content .product_list2 .product_list_content { padding: 0 10px 10px; }
+				#content .product_list2 .product_list_content h2 { color: #1c3f94; font-size: 1.6em; }
+				#content .product_list2 .product_list_content h3 { font-size: 1.2em; line-height: 1.2; }
+				#content .product_list2 .product_list_short { padding: 10px 0 0; }
+				#content .product_list2 .product_list_link { position: absolute; top: 10px; right: 10px; width: 70px; }
+				#content .product_list2 .product_list_link a { display: block; width: 60px; height: 16px; border: 5px solid #c4c5e1; background: url(../images/info_button.gif) 0 0 no-repeat; text-indent: -999em; }
+				#content .product_list2 .product_list_link a:hover { background: url(../images/info_button.gif) 0 -16px no-repeat; }
+				#content .product_list2 .product_list_image { width: 360px; margin: 0 55px 0 0; text-align: center; display: block; padding: 0; }
+					
+					
+				/* tabulated product */
+				table.tabulatedProduct, table.tabulatedProductData { width: 100%; }
+				table.tabulatedProduct th { padding: 5px; color: #06c; font-size: 1.1em; font-weight: normal; text-transform: none; vertical-align: bottom; }
+				table.tabulatedProduct td { padding: 5px; }
+				td.tabulatedProductImage { width: 314px; }
+				table.tabulatedProductData td, table.tabulatedProductData th { border-bottom: 1px solid #06c; }
+				table.tabulatedProduct td.tabulatedProductTitle, table.tabulatedProduct th.titlePosition, table.tabulatedProduct td.dataPosition { }
+				table.tabulatedProduct td.dataPosition { color: #06c; font-weight: bold; font-size: 1.3em; }
+				table.tabulatedProductData td.tabulatedProductTitle { border-bottom: 2px solid #06c; }
+				table.tabulatedProduct h2 { color: #06c; font-size: 1.7em; text-transform: uppercase; }
+				table.tabulatedProduct td.tabulatedProductTitle { padding: 20px 0 0; }
+			
+				
+					/* tabulated product backgrounds */
+					#content .single_product { width: 870px; background-color: #fff; background-image: url(../images/Globes-bkg.jpg); background-repeat: no-repeat; padding: 15px; }
+					#container .performance .single_product { width: 870px; background: none; padding: 15px 0; }
+					#content #globes-2 { background: none; padding: 0; }
+					#content .single_product.fuses-accessories { background-image: url(../images/Fuse-Bkg.jpg); }
+					#content #relays-flashers, #content .relays-flashers { background-image: url(../images/switches-bkg.jpg); }
+					#content .single_product.terminals { background-image: url(../images/terminals-bkg.jpg); }
+					
+					#content #driving-fog-lamps, #content single_product.driving-fog-lamps { width: 870px; background-color: #fff; background-image: url(../images/Driving-bkg.jpg); background-repeat: no-repeat; }
+					#content #emergency-lighting { width: 870px; background-color: #fff; background-image: url(../images/Emerg-bkg.jpg); background-repeat: no-repeat; }
+					#content #trailer-connectors { width: 870px; background-color: #fff; background-image: url(../images/Trailers-bkg.jpg); background-repeat: no-repeat; }
+					#content #fuses-fuse-accessories { width: 870px; background-color: #fff; background-image: url(../images/Fuse-Bkg.jpg); background-repeat: no-repeat; }
+					
+					/* static html layout styles */
+					.txtclass { color: white; font-size: 7.5pt; font-family: Verdana, Arial, Helvetica, sans-serif; }
+					.headclass { color: black; font-size: 13pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; line-height: 15pt; }
+					.txt2class { color: black; font-size: 7.5pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 9pt; }
+					.txt4class { color: #1c3f94; font-size: 7.5pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 9pt; font-weight: bold; }
+					.partnoclass { color: black; font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+					.txt3class { color: black; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 10pt; }
+					.txt5class { color: black; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 12pt; }
+					.subheadclass { color: black; font-size: 9pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; line-height: 11pt; }
+					.selectForm table tr { height: 30px; }
+					.selectForm table select { width: 200px; }
+					.selectForm table th { width: 48px; text-align: left; color: #1c3f94; }
+			
+				/* popup styles */
+				#TB_window #TB_title { height: 35px; }
+				
+					#TB_window.driving-fog-lamps-popup-layout #TB_title { background: url(../images/popup_banner.gif) no-repeat; }
+					/*
+					#TB_window.globes-incandescent-halogen-popup-layout #TB_title { background: url(../images/globes_popup_banner.gif) no-repeat; }
+					#TB_window.globes-incandescent-halogen-popup-layout { border: 1px solid #0066cb; }
+					#TB_window.globes-incandescent-halogen-popup-layout { background: #fff url(../images/globes_popup_bg.gif) top right no-repeat; }
+				
+					*/
+					
+					#TB_window.switches-popup-layout #TB_title, #TB_window.relays-flashers-popup-layout #TB_title, #TB_window.reversing-alarms-horns-popup-layout #TB_title, #TB_window.power-accessories-popup-layout #TB_title { background: url(../images/switches_popup_banner.gif) no-repeat; }
+					#TB_window.switches-popup-layout, #TB_window.relays-flashers-popup-layout, #TB_window.reversing-alarms-horns-popup-layout, #TB_window.power-accessories-popup-layout { border: 1px solid #ee3a43; }
+					#TB_window.switches-popup-layout, #TB_window.relays-flashers-popup-layout, #TB_window.reversing-alarms-horns-popup-layout, #TB_window.power-accessories-popup-layout { background: #fff url(../images/switches_popup_bg.gif) top right no-repeat; }
+				
+					#TB_window.trailer-connectors-popup-layout #TB_title { background: url(../images/trailer_popup_banner.gif) no-repeat; }
+					#TB_window.trailer-connectors-popup-layout { border: 1px solid #fdb930; }
+					#TB_window.trailer-connectors-popup-layout { background: #fff url(../images/trailer_popup_bg.gif) top right no-repeat; }
+				
+					#TB_window.rv-interior-lighting-popup-layout #TB_title { background: url(../images/rv_popup_banner.gif) no-repeat; }
+					#TB_window.rv-interior-lighting-popup-layout { border: 1px solid #a6b3aa; }
+					#TB_window.rv-interior-lighting-popup-layout { background: #fff url(../images/rv_popup_bg.gif) top right no-repeat; }
+					
+					#TB_window.led-truck-trailer-popup-layout #TB_title, #TB_window.sealed-truck-trailer-popup-layout #TB_title, #TB_window.conventional-truck-trailer-popup-layout #TB_title { background: url(../images/trucktrailer_popup_banner.gif) no-repeat; }
+					#TB_window.led-truck-trailer-popup-layout, #TB_window.sealed-truck-trailer-popup-layout, #TB_window.conventional-truck-trailer-popup-layout { border: 1px solid #c70b46; }
+					#TB_window.led-truck-trailer-popup-layout, #TB_window.sealed-truck-trailer-popup-layout, #TB_window.conventional-truck-trailer-popup-layout { background: #fff url(../images/trucktrailer_popup_bg.gif) top right no-repeat; }
+				
+				
+					#TB_window.merchandisers-popup-layout #TB_title { background: url(../images/merch_popup_banner.gif) no-repeat; }
+					#TB_window.merchandisers-popup-layout { border: 1px solid #73619e; }
+					#TB_window.merchandisers-popup-layout { background: #fff url(../images/merch_popup_bg.gif) top right no-repeat; }
+					
+					
+					
+					
+					#TB_window.driving-fog-lamps-popup-layout #TB_title {
+						background-image: url(../images/popup_banner.gif);
+						background-repeat: no-repeat;
+						}
+						
+					#TB_window.emergency-lighting-popup-layout #TB_title {
+						background-image: url(../images/emergency-lighting/emerg-popup-banner.jpg);
+						background-repeat: no-repeat;
+						}
+					#TB_window.emergency-lighting-popup-layout {
+						border: 1px solid #5f3283;
+						background: #FFF url(../images/emergency-lighting/large-emerg-bkg.png) right 35px no-repeat;
+						}
+						
+					#TB_window.globes-popup-layout #TB_title {
+						background-image: url(../images/globes/globes-popup-banner.jpg);
+						background-repeat: no-repeat;
+						}	
+					#TB_window.globes-popup-layout {
+						border: 1px solid #0066cb;
+						background: #FFF url(../images/globes/globes-popup-bg.jpg) right 35px no-repeat;
+						}	
+						
+					#TB_window.terminals-popup-layout #TB_title {
+						background-image: url(../images/terminals/Terminals-Pop-Up.jpg);
+						background-repeat: no-repeat;
+						}
+					#TB_window.terminals-popup-layout {
+						border: 1px solid #00aa9d;
+						background: #FFF url(../images/terminals/Terminals-Pop-Up.jpg) right -35px no-repeat;
+						}
+						
+					
+					#TB_window.fuses-accessories-popup-layout #TB_title { background: url(../images/fuses_popup_banner.gif) no-repeat; }
+					#TB_window.fuses-accessories-popup-layout { border: 1px solid #888409; }
+					#TB_window.fuses-accessories-popup-layout { background: #fff url(../images/fuses_popup_bg.gif) top right no-repeat; }
+					
+				
+				
+			
+				#content #content_block { width: 900px; margin: 0 0 15px; }
+				#content #content_block ul { width: 900px; overflow: hidden; padding: 0; }
+				#content #content_block ul li { float: left; width: 443px; padding: 0 12px 5px 0; line-height: 0; }
+				#content #content_block ul li.end { padding: 0; }
+				
+				#content ul#banners { width: 900px; overflow: hidden; }
+				#content #banners li { float: left; width: 440px; padding: 0 10px 20px 0; line-height: 0; }
+				#content #banners li.end { padding: 0 0 0 1px; }
+				#content #banners iframe { display: none; }
+				
+				#content .narvanews { min-height: 430px; background-color: #1d3f96; background-image: url(../images/bg-narva-news.jpg); background-repeat: no-repeat; background-position: 0 21px; }
+				#content .pressreleases { min-height: 430px; background-color: #fff; }
+				#content #content_block ul.items { padding: 160px 0 0; text-align: center; }
+				#content #content_block ul.items li { float: left; width: 210px; line-height: 1.6; }
+				#content #content_block ul.items li a { color: #fff; text-decoration: none; }
+				
+				#content .contactus { min-height: 410px; background-image: url(../images/bg-contactus.jpg); background-repeat: no-repeat; background-position: 0 0; }
+				
+				#content .contactus a { color: #fff; }
+				
+				#content .aboutus { color: #000; min-height: 410px; background-image: url(../images/About-Us-Panel_v2.jpg); background-repeat: no-repeat; background-position: 0 0; }
+				#content .aboutus .headclass { color: #1c3f94; }
+				#content .aboutus .txtclass { color: #000; font-size: 1.1em; }
+				#content .aboutus p { margin: 15px 0; }
+			
+			/* footer ----------------------------------*/
+			#footer { width: 900px; margin: 0 auto; }
+			#footer a { color: #fff; }
+			#footer p { float: left; padding: 20px 0; color: #fff; font-size: 1.1em; }
+			#footer p#copyright { float: right; }
+			
+			
+			
+			/* -- thickbox styles */
+			#TB_overlay { position: fixed; z-index: 100; top: 0; left: 0; height: 100%; width: 100%; }
+			.TB_overlayMacFFBGHack { background: url(../images/macFFBgHack.png) repeat; }
+			.TB_overlayBG { background: #fff; filter: alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75; }
+			#TB_window { position: fixed; z-index: 102; color: #000; display: none; text-align: left; top: 50%; left: 50%; margin: 0; padding: 0; background: #fff; border: 1px solid #944398; }
+			#TB_load { position: fixed; display:none; height:13px; width:208px; z-index:103; top: 50%; left: 50%;  margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */ }
+			#TB_HideSelect{ z-index:99; position:fixed; top: 0; left: 0; background-color:#fff; border:none; filter:alpha(opacity=0); -moz-opacity: 0; opacity: 0; height:100%; width:100%; }
+			#TB_iframeContent { clear:both; border:none; }	
+		
+			* html #TB_overlay { position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px'); }
+			* html #TB_window { position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');  }
+			* html #TB_load { position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px'); }
+			* html #TB_HideSelect { position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px'); }
+			
+
+
+			p.message,
+			form#signup_form 
+			{
+				width: 859px;
+				padding: 0 20px 20px;
+				background: #fff;
+			}
+			p.message {
+				font-size: 1.2em;
+				padding: 20px 20px 30px;
+			}
+
+
+form#signup_form legend
+{
+	display: none;
+}
+form#signup_form li {
+	margin: 0 0 .75em;
+	clear: both;
+}
+form#signup_form label 
+{
+	float: left;
+	display: block;
+	width: 150px;
+	margin: 5px 0 0;
+	font-size: 1.2em;
+}
+form#signup_form fieldset fieldset span
+{
+	display: block;
+	font-size: 1.2em;
+}
+form#signup_form input.input_large_off,
+form#signup_form input.input_large_on,
+div.register input
+{
+	width: 300px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}	
+form#signup_form button,
+div.register input.submit
+{
+	padding: 3px 8px;
+	border: 0;
+	background: #06c;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 3px 3px #999;
+	-webkit-box-shadow: 0 3px 3px #999;
+	-moz-box-shadow: 0 3px 3px #999;
+	cursor: pointer;
+}	
+div.register input.submit 
+{
+	width: auto !important;
+}
+
+li#li_c_EmailType label { text-indent: -999em; }
+li#li_c_EmailType fieldset.receive_email label { text-indent: 0; width: 400px; font-weight: bold; }
+form#signup_form br { margin: 0; padding: 0; display: none; }
+
+
+
+ul.release
+{
+	margin: 20px 0 0;
+}
+ul.release li
+{
+	float: left;
+	display: inline;
+	width: 440px;
+	height: 144px;
+	margin: 0 20px 20px 0;
+}

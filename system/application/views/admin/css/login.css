@@ -1,0 +1,115 @@
+/* CSS Document */
+
+/********************************      Basic Structure      ********************************/
+
+html { font-size: 100%;
+       height: 100%;
+       margin-bottom: 1px; /* Always show a scrollbar to avoid jumping when the scrollbar appears  */
+     }
+
+body { font-size:12px;
+	   background:#b2d4eb url(../images/bg.jpg) no-repeat center 0;
+	   font:Arial, Helvetica, sans-serif;
+	 }
+/********************************      General Classes      ********************************/
+
+.clear { clear: both; }
+				
+.align-left {  float: left; }
+				
+.align-right { float: right; }
+	
+/********************************      General Classes      ********************************/
+
+input { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+
+/********************************      General Classes      ********************************/
+				
+#container{
+	width:960px;
+	margin:0 auto;
+}
+.title{
+	text-align:center;
+	margin-top:80px;
+	height:66px;
+}
+.info{
+	height:24px;
+	width:460px;
+	color:#ed244f;
+	margin:20px auto 0 auto;
+}
+.info p{
+	height:24px;
+	padding-top:5px;
+	padding-left:110px;
+	background:url(../images/infobg.png) no-repeat;
+}
+.info p img { margin-right:10px; float:left; }
+.login{
+	width:535px;
+	margin:0 auto;
+	margin-top:15px;
+	height:200px;
+}
+.login .key{
+	float:left;
+	display:inline;
+}
+.login .txt{
+	float:left;
+	margin-top:30px;
+}
+.login .txt .user,.login .txt .pwd{
+	height:24px;
+	line-height:24px;
+	margin-bottom:18px;
+	position:relative;
+}
+.login .txt .user label,.login .txt .pwd label {font-size:12px; font-weight:700; color:#2f77a9; margin-right:10px; width:40px; height:24px; line-height:24px; text-align:right; display:block; float:left;}
+span.userimg,span.typeimg { position:absolute; z-index:5; top:4px; left:58px;}
+.login .txt .user .user_txt{
+	width:210px;
+	height:14px;
+	line-height:14px;
+	border:1px solid #e4e7e6;
+	padding:5px 15px 5px 35px;
+	position:absolute;
+}
+.login .txt .pwd .pwd_txt{
+	width:210px;
+	height:14px;
+	line-height:14px;
+	border:1px solid #e4e7e6;
+	padding:5px 15px 5px 35px;
+	position:absolute;
+	}
+.login .txt .sub{
+	padding-left:10px;
+	color:#42769b;
+	position:relative;
+	width:300px;
+}
+.login .txt .sub .btn{
+	width:121px;
+	height:33px;
+	background:url(../images/login.png) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+.login .txt .sub .btn:hover{
+	width:121px;
+	height:33px;
+	background:url(../images/login_hover.png) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+#footer{
+	text-align:center;
+	color:#7f7f7f;
+	margin-top:100px;
+}
+#footer span{
+	font-family:Arial;
+}
